@@ -7,6 +7,10 @@ class Pizza(models.Model):
     price = models.IntegerField()
     image = models.ImageField()
 
+    class Meta:
+        verbose_name = 'Пицца'
+        verbose_name_plural = 'Пиццы'
+
 
 class Drink(models.Model):
     title = models.CharField(max_length=255)
@@ -17,6 +21,10 @@ class Drink(models.Model):
     price = models.IntegerField()
     image = models.ImageField()
 
+    class Meta:
+        verbose_name = 'Напиток'
+        verbose_name_plural = 'Напитки'
+
 
 class Sushi(models.Model):
     title = models.CharField(max_length=255)
@@ -25,6 +33,10 @@ class Sushi(models.Model):
     price = models.IntegerField()
     image = models.ImageField()
 
+    class Meta:
+        verbose_name = 'Суши'
+        verbose_name_plural = 'Суши'
+
 
 class Burger(models.Model):
     title = models.CharField(max_length=255)
@@ -32,3 +44,7 @@ class Burger(models.Model):
     consist = models.TextField()
     price = models.IntegerField()
     image = models.ImageField()
+
+    class Meta:
+        verbose_name = 'Бургер'
+        verbose_name_plural = 'Бургеры'

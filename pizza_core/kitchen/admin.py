@@ -9,7 +9,7 @@ class PizzaAdmin(admin.ModelAdmin):
 
 @admin.register(Drink)
 class DrinkAdmin(admin.ModelAdmin):
-    list_display = ['title', 'description', 'volume', 'is_alcohol', 'consist', 'price']
+    list_display = ['id', 'title', 'description', 'volume', 'is_alcohol', 'consist', 'price']
 
 
 @admin.register(Sushi)

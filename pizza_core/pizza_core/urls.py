@@ -17,8 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from kitchen.views import PizzaListTemplateView
+from kitchen.views import DrinkListTemplateView
+from kitchen.views import PizzaDetailView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('pizzas/', PizzaListTemplateView.as_view())
+    path('pizzas/', PizzaListTemplateView.as_view()),
+    path('drinks/', DrinkListTemplateView.as_view()),
+    path('pizza/', PizzaDetailView.as_view())
 ]
